@@ -1,0 +1,21 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h5 {
+    color: #000000;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para las secciones */
+#inicio {
+    background-image: url('viaje-fondo.jpg');
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    padding: 100px 0;
+}

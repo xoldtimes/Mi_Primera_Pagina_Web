@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Viajes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="bg-primary text-white text-center p-4">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand text-white" href="#">Mis Viajes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link text-white" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#destinos">Destinos Populares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="text-center p-5">
+        <div class="container">
+            <h1>Bienvenidos a mi página de viajes</h1>
+            <p>Explora los mejores destinos y lugares del mundo</p>
+            <img src="./img/viaje.jpg" class="img-fluid" alt="Imagen de viaje">
+        </div>
+    </section>
+
+     <!-- Video de presentación -->
+     <section id="video" class="text-center p-5">
+        <div class="container">
+        <h1>Una Introduccion a las maravillas del mundo</h1>
+     <div class="d-flex justify-content-center mt-4">
+        <video width="600" controls>
+            <source src="./img/video_de_viajes.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+</div>
+</section>
+
+    <!-- Sección de Destinos Populares -->
+    <section id="destinos" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Destinos Populares</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./img/destino1.jpg" class="card-img-top" alt="Destino 1">
+                        <div class="card-body">
+                            <h5 class="card-title">París</h5>
+                            <p class="card-text">la "ciudad del amor", es sinónimo de romance, arte y sofisticación. Pasea por sus elegantes avenidas, visita íconos como la Torre Eiffel o el Louvre, y déjate envolver por el encanto de sus cafés y bistrós. Con una mezcla de historia, moda y gastronomía mundialmente famosa, París es el destino perfecto para los amantes del estilo y la cultura.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./img/destino2.jpg" class="card-img-top" alt="Destino 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Tokio</h5>
+                            <p class="card-text">es una vibrante fusión de tecnología futurista y profundas tradiciones. En esta metrópoli, los rascacielos iluminados contrastan con antiguos templos y santuarios, mientras los distritos llenos de neones te invitan a explorar el corazón de la cultura pop, la moda y la gastronomía japonesa. Tokio es donde lo moderno y lo tradicional coexisten en armonía.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./img/destino3.jpg" class="card-img-top" alt="Destino 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Nueva York</h5>
+                            <p class="card-text">la "ciudad que nunca duerme", es un destino vibrante lleno de energía y diversidad. Desde los emblemáticos rascacielos de Manhattan hasta la tranquila belleza de Central Park, la ciudad ofrece algo para todos. Disfruta de una oferta cultural inigualable con sus museos, teatros de Broadway, y barrios únicos como Brooklyn o el SoHo. Cada rincón cuenta una historia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="sobre-mi" class="p-5">
+        <div class="container">
+            <h2 class="text-center">Sobre mí</h2>
+            <p>Mi vida ha sido una aventura constante a través de viajes que me han permitido descubrir nuevas culturas, sabores y paisajes. Cada destino me ha regalado experiencias inolvidables y aprendizajes que me inspiran a seguir explorando el mundo.</p>
+            <ul class="list-group">
+                <li class="list-group-item">Aventurero</li>
+                <li class="list-group-item">Explorador</li>
+                <li class="list-group-item">Fotógrafo</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto con Formulario -->
+    <section id="contacto" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-dark text-center p-4" style="background-color: #add8e6;">
+        <p>2024 Mis Viajes. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
